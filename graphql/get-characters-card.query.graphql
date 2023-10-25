@@ -1,0 +1,32 @@
+query GetCharacters($page: Int, $name: String) {
+  characters(page: $page, filter: { name: $name }) {
+    info {
+      next
+      prev
+      count
+      pages
+    }
+    results {
+      id
+      name
+      image
+      species
+      gender
+      status
+      origin {
+        name
+      }
+      location {
+        id
+        name
+      }
+      episode {
+        id
+        name
+        created
+        episode
+        air_date
+      }
+    }
+  }
+}
