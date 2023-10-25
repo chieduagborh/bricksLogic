@@ -66,7 +66,10 @@ const CharCard: React.FC<Props> = ({
               <span>{location}</span>
             </h5>
             See list of Episodes:{" "}
-            <span className="text-blue-500 cursor-pointer" onClick={openModal}>
+            <span
+              className="text-rm-pink font-bold cursor-zoom-in hover:text-rm-brown"
+              onClick={openModal}
+            >
               {episode.length}
             </span>
           </div>
