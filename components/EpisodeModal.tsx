@@ -1,7 +1,4 @@
-const EpisodeModal: React.FC<{ episode: any; img: string }> = ({
-  episode,
-  img,
-}) => {
+const EpisodeModal: React.FC<{ episode: any }> = ({ episode }) => {
   return (
     <div
       className="relative z-10"
@@ -44,15 +41,12 @@ const EpisodeModal: React.FC<{ episode: any; img: string }> = ({
                     <ul className={""}>
                       {episode.map((episode: any, i: number) => {
                         return (
-                          <li className="my-2">
+                          <li className="my-2" key={i}>
                             {episode.episode}: {episode.name}
                           </li>
                         );
                       })}
                     </ul>
-                    {/* <p className="text-sm text-gray-500">
-                     
-                    </p> */}
                   </div>
                 </div>
               </div>

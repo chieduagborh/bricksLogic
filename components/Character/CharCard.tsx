@@ -45,7 +45,11 @@ const CharCard: React.FC<Props> = ({
           }
         })()}
 
-        <img className="rounded-full" src={image_url}></img>
+        <img
+          className="rounded-full"
+          src={image_url}
+          alt={"Image of " + name}
+        ></img>
         <div className="bg-white rounded-lg absolute w-full bottom-[0%] opacity-[.85] py-2 h-[4rem] overflow-hidden transition-max-h duration-300 ease-in-out group-hover:h-[13rem]">
           <h2>{name}</h2>
           <h3>Species: {species}</h3>
@@ -71,7 +75,7 @@ const CharCard: React.FC<Props> = ({
 
       {isModalOpen && (
         <div className="modal-overlay absolute" onClick={closeModal}>
-          <EpisodeModal episode={episode} img={image_url} />
+          <EpisodeModal episode={episode} />
         </div>
       )}
     </>
