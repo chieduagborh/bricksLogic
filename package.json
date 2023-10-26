@@ -16,8 +16,8 @@
     "autoprefixer": "^9.8.8",
     "graphql": "^16.8.1",
     "next": "13.5.4",
-    "react": "^18",
-    "react-dom": "^18"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.23.2",
@@ -37,12 +37,13 @@
     "@types/jest": "^29.5.6",
     "@types/mocha": "^10.0.3",
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/react": "^18.2.33",
+    "@types/react-dom": "^18.2.14",
     "babel-jest": "^29.7.0",
     "eslint": "^8",
     "eslint-config-next": "13.5.4",
     "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "tailwindcss": "^3.3.4",
     "typescript": "^5.2.2"
   },
@@ -55,6 +56,17 @@
     "coverageReporters": [
       "lcov",
       "text-summary"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "testEnvironment": "jsdom"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react",
+      "@babel/preset-typescript"
     ]
   }
 }

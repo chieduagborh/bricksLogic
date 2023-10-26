@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import EpisodeModal from "@/components/EpisodeModal";
+import React, { useState } from "react";
+import EpisodeModal from "../EpisodeModal";
 
 interface Props {
   name: string;

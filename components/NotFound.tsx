@@ -1,5 +1,6 @@
 import Image from "next/image";
 import notfound from "/public/assets/images/oh-geez.jpg";
+import React from "react";
 
 const NotFound = () => {
   return (
